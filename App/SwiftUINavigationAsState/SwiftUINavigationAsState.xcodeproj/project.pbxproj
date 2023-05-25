@@ -11,6 +11,16 @@
 		2A016E8B2A1EA23B005EBA4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E8A2A1EA23B005EBA4C /* ContentView.swift */; };
 		2A016E8D2A1EA23C005EBA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A016E8C2A1EA23C005EBA4C /* Assets.xcassets */; };
 		2A016E902A1EA23C005EBA4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A016E8F2A1EA23C005EBA4C /* Preview Assets.xcassets */; };
+		2A016E982A1EA579005EBA4C /* MarketingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E972A1EA579005EBA4C /* MarketingButton.swift */; };
+		2A016E9A2A1F2B96005EBA4C /* LoginCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E992A1F2B96005EBA4C /* LoginCardView.swift */; };
+		2A016E9C2A1F2BAC005EBA4C /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E9B2A1F2BAC005EBA4C /* CTAButton.swift */; };
+		2A016E9E2A1F2BD0005EBA4C /* MarketingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E9D2A1F2BD0005EBA4C /* MarketingView.swift */; };
+		2A016EA02A1F2BE5005EBA4C /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016E9F2A1F2BE5005EBA4C /* CTAView.swift */; };
+		2A016EA22A1F2BFD005EBA4C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016EA12A1F2BFD005EBA4C /* LoginView.swift */; };
+		2A016EA42A1F2C1D005EBA4C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016EA32A1F2C1D005EBA4C /* MainView.swift */; };
+		2A016EA62A1F2C4A005EBA4C /* UIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016EA52A1F2C4A005EBA4C /* UIComposer.swift */; };
+		2A016EA82A1F2CB3005EBA4C /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016EA72A1F2CB3005EBA4C /* AppNavigation.swift */; };
+		2A016EAA2A1F2CCE005EBA4C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A016EA92A1F2CCE005EBA4C /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		2A016E8A2A1EA23B005EBA4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A016E8C2A1EA23C005EBA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A016E8F2A1EA23C005EBA4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A016E972A1EA579005EBA4C /* MarketingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingButton.swift; sourceTree = "<group>"; };
+		2A016E992A1F2B96005EBA4C /* LoginCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCardView.swift; sourceTree = "<group>"; };
+		2A016E9B2A1F2BAC005EBA4C /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
+		2A016E9D2A1F2BD0005EBA4C /* MarketingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingView.swift; sourceTree = "<group>"; };
+		2A016E9F2A1F2BE5005EBA4C /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
+		2A016EA12A1F2BFD005EBA4C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2A016EA32A1F2C1D005EBA4C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2A016EA52A1F2C4A005EBA4C /* UIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComposer.swift; sourceTree = "<group>"; };
+		2A016EA72A1F2CB3005EBA4C /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		2A016EA92A1F2CCE005EBA4C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +72,16 @@
 			isa = PBXGroup;
 			children = (
 				2A016E882A1EA23B005EBA4C /* SwiftUINavigationAsStateApp.swift */,
+				2A016EA52A1F2C4A005EBA4C /* UIComposer.swift */,
+				2A016EAB2A1F2CE8005EBA4C /* AppNavigation */,
 				2A016E8A2A1EA23B005EBA4C /* ContentView.swift */,
+				2A016E972A1EA579005EBA4C /* MarketingButton.swift */,
+				2A016E9B2A1F2BAC005EBA4C /* CTAButton.swift */,
+				2A016E992A1F2B96005EBA4C /* LoginCardView.swift */,
+				2A016E9D2A1F2BD0005EBA4C /* MarketingView.swift */,
+				2A016E9F2A1F2BE5005EBA4C /* CTAView.swift */,
+				2A016EA12A1F2BFD005EBA4C /* LoginView.swift */,
+				2A016EA32A1F2C1D005EBA4C /* MainView.swift */,
 				2A016E8C2A1EA23C005EBA4C /* Assets.xcassets */,
 				2A016E8E2A1EA23C005EBA4C /* Preview Content */,
 			);
@@ -65,6 +94,15 @@
 				2A016E8F2A1EA23C005EBA4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A016EAB2A1F2CE8005EBA4C /* AppNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				2A016EA72A1F2CB3005EBA4C /* AppNavigation.swift */,
+				2A016EA92A1F2CCE005EBA4C /* Route.swift */,
+			);
+			path = AppNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A016EA82A1F2CB3005EBA4C /* AppNavigation.swift in Sources */,
+				2A016E9A2A1F2B96005EBA4C /* LoginCardView.swift in Sources */,
+				2A016EA42A1F2C1D005EBA4C /* MainView.swift in Sources */,
 				2A016E8B2A1EA23B005EBA4C /* ContentView.swift in Sources */,
 				2A016E892A1EA23B005EBA4C /* SwiftUINavigationAsStateApp.swift in Sources */,
+				2A016E982A1EA579005EBA4C /* MarketingButton.swift in Sources */,
+				2A016EA02A1F2BE5005EBA4C /* CTAView.swift in Sources */,
+				2A016E9C2A1F2BAC005EBA4C /* CTAButton.swift in Sources */,
+				2A016EA62A1F2C4A005EBA4C /* UIComposer.swift in Sources */,
+				2A016EAA2A1F2CCE005EBA4C /* Route.swift in Sources */,
+				2A016EA22A1F2BFD005EBA4C /* LoginView.swift in Sources */,
+				2A016E9E2A1F2BD0005EBA4C /* MarketingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

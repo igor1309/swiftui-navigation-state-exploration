@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUINavigationAsStateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(uiComposer: .init(navigation: .init()))
         }
     }
 }
