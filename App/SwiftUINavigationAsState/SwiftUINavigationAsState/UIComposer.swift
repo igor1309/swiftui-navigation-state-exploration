@@ -5,6 +5,8 @@
 //  Created by Igor Malyarov on 25.05.2023.
 //
 
+import SwiftUI
+
 final class UIComposer {
     
     let navigation: AppNavigation
@@ -45,5 +47,58 @@ final class UIComposer {
         
         .init()
     }
+    
+    func makeLoginView(route: AppNavigation.Route.LoginRoute?) -> some View {
+        
+        LoginView(
+            loginCardView: makeLoginCardView,
+            marketingButton: makeMarketingButton,
+            ctaButton: makeCTAButton
+        )
+        .sheet(
+            item: .init(
+                get: { route },
+                set: { _ in /* ?????????????????? */}
+            ),
+            content: makeDestination(for:)
+        )
+    }
+    
+    func makeMainView() -> MainView {
+        
+        .init()
+    }
+    
+    @ViewBuilder
+    func makeDestination(
+        for route: AppNavigation.Route.LoginRoute
+    ) -> some View {
+        
+        switch route {
+        case .marketing:
+            makeMarketingView()
+            
+        case let .cta(ctaRoute):
+            makeCTAView()
+                .sheet(
+                    item: .init(
+                        get: { ctaRoute },
+                        set: { _ in /* ?????????????????? */}
+                    ),
+                    content: makeDestination(for:)
+                )
+        }
+    }
+    
+    @ViewBuilder
+    func makeDestination(
+        for route: AppNavigation.Route.CTARoute
+    ) -> some View {
+        
+        switch route {
+        case .orderCard:
+            #warning("add action")
+            Button("Order Card", action: {})
+        }
+    }
 }
-

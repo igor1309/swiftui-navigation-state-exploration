@@ -22,39 +22,10 @@ struct ContentView: View {
         
         switch navigation.route {
         case let .login(loginRoute):
-            LoginView(
-                loginCardView: uiComposer.makeLoginCardView,
-                marketingButton: uiComposer.makeMarketingButton,
-                ctaButton: uiComposer.makeCTAButton
-            )
-            .sheet(
-                item: .init(
-                    get: { loginRoute },
-                    set: { _ in /* ?????????????????? */}
-                )
-            ) { route in
-                switch route {
-                case .marketing:
-                    uiComposer.makeMarketingView()
-                    
-                case let .cta(ctaRoute):
-                    uiComposer.makeCTAView()
-                        .sheet(
-                            item: .init(
-                                get: { ctaRoute },
-                                set: { _ in /* ?????????????????? */}
-                            )
-                        ) { route in
-                            switch route {
-                            case .orderCard:
-                                Text("Order Card")
-                            }
-                        }
-                }
-            }
+            uiComposer.makeLoginView(route: loginRoute)
             
         case .main:
-            MainView()
+            uiComposer.makeMainView()
             
         case .none:
             EmptyView()
@@ -77,7 +48,9 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
     
-    static func contentView(route: AppNavigation.Route? = nil) -> ContentView {
+    static func contentView(
+        route: AppNavigation.Route? = nil
+    ) -> ContentView {
         
         ContentView(
             uiComposer: .init(
